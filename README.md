@@ -7,8 +7,8 @@
 
 
 # Features
-- Quickly sift out an clean subsets (about 8 mins in CIFAR-10)
-- Applicable in most existing poison situations
+- Quickly sift out an clean subsets (about 8 mins on the CIFAR-10)
+- Applicable in most existing poisoning situations
 - Applicable to most existing datasets
 - Compatible with existing defense algorithms
 
