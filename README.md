@@ -4,7 +4,7 @@
 ![Pytorch 1.10.1](https://img.shields.io/badge/pytorch-1.10.1-DodgerBlue.svg?style=plastic)
 ![CUDA 11.0](https://img.shields.io/badge/cuda-11.0-DodgerBlue.svg?style=plastic)
 
-Most existing defenses against data poisoning assume access to a set of clean data (referred to as the base set hereinafter). While this assumption has been taken for granted, given the fast-growing research on tealthy data poisoning techniques, an important question arises: can the defender really identify a clean subset within a contaminated dataset to support the defenses? We accomplish extensive experiments to give a negative answer to this question. 
+Most existing defenses against data poisoning assume access to a set of clean data (referred to as the <b>base set</b>). While this assumption has been taken for granted, given the fast-growing research on stealthy data poisoning techniques, we find that defenders with existing methods, including manual inspections, cannot identify a clean base set within a contaminated dataset. 
 <br>
 
 ![Humanexp](https://user-images.githubusercontent.com/77789132/187101117-15aaa0e5-1d6c-4282-9ec2-2aabfe25270e.jpg)
