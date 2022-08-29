@@ -13,7 +13,7 @@ The above figure shows the human inspection results regarding data poisoning att
 
 With the above-identified challenge of obtaining a clean base set with high precision, we take a step further and propose META-SIFT to resolve the challenge. Our evaluation shows that META-SIFT can robustly sift out a clean base set (size 1000 or more) with 100% precision and zero variance under a wide range of poisoning attacks. 
 <b>The selected base set is large enough to give rise to successful defense when plugged into the existing AI-security defense techniques</b> 
-(e.g., robust training for mitigating label-noise attacks; trojan-net detections, backdoor removal defenses, or backdoor sample detections).
+(e.g., robust training for <a href="https://github.com/xjtushujun/meta-weight-net">mitigating label-noise attacks</a>; <a href="https://github.com/AI-secure/Meta-Nerual-Trojan-Detection">trojan-net detections</a>, <a href="https://github.com/ruoxi-jia-group/I-BAU">backdoor removal defenses</a>, or <a href="https://github.com/ruoxi-jia-group/frequency-backdoor">backdoor sample detections</a>).
 
 # Features
 - Quickly sift out an clean subsets (about 8 mins on the CIFAR-10)
