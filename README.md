@@ -25,7 +25,7 @@ With the above-identified challenge of obtaining a clean base set with high prec
 # Requirements
 + Python >= 3.6
 + PyTorch >= 1.10.1
-+ TorchVisison >= 0.11.2
++ TorchVision >= 0.11.2
 + Imageio >= 2.9.0
 
 # Usage & HOW-TO
