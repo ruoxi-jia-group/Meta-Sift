@@ -11,7 +11,9 @@ Most existing defenses against data poisoning assume access to a set of clean da
 The above figure shows the human inspection results regarding data poisoning attacks. The labels and images marked in red depict potential manipulations under that attack category, and the green represents that the attribute remains intact. Among the three types of attacks, we report the error rate of misclassifying clean samples into poisoned ones (FPR) or poisoned ones into clean samples (FNR). The result reveals humans indeed can't identify all poisoned samples with high precision. In particular, manual inspection's performance in identifying Feature-Only (e.g., clean-label backdoor attacks) attacks is only marginally better than random selection.
 
 
-In addition to uncovering the challenge of identifying a clean base set with high precision, we take a step further and propose META-SIFT to resolve the challenge. Our evaluation shows that META-SIFT can robustly sift out a clean base set with 100% precision under a wide range of poisoning attacks. The selected base set is large enough to give rise to successful defense when plugged into the existing defense techniques.
+With the above-identified challenge of obtaining a clean base set with high precision, we take a step further and propose META-SIFT to resolve the challenge. Our evaluation shows that META-SIFT can robustly sift out a clean base set (size 1000 or more) with 100% precision and zero variance under a wide range of poisoning attacks. 
+<b>The selected base set is large enough to give rise to successful defense when plugged into the existing AI-security defense techniques</b> 
+(e.g., robust training for mitigating label-noise attacks; trojan-net detections, backdoor removal defenses, or backdoor sample detections).
 
 # Features
 - Quickly sift out an clean subsets (about 8 mins on the CIFAR-10)
