@@ -16,10 +16,11 @@ With the above-identified challenge of obtaining a clean base set with high prec
 (e.g., robust training for <a href="https://github.com/xjtushujun/meta-weight-net">mitigating label-noise attacks</a>; <a href="https://github.com/AI-secure/Meta-Nerual-Trojan-Detection">trojan-net detections</a>, <a href="https://github.com/ruoxi-jia-group/I-BAU">backdoor removal defenses</a>, or <a href="https://github.com/ruoxi-jia-group/frequency-backdoor">backdoor sample detections</a>).
 
 # Features
-- Quickly sift out an clean subsets (about 8 mins on the CIFAR-10)
-- Applicable in most existing poisoning situations
-- Applicable to most existing datasets
-- Compatible with existing defense algorithms
+- Quickly sift out clean subsets (about 8 mins on the CIFAR-10)
+- No need for pre-training a model
+- Effective against most existing poisoning attack settings (evaluated on 16 existing label-flipping, backdoor, poisoning attacks)
+- Applicable to most existing datasets (evaluated on CIFAR-10, GTSRB, PubFig, ImageNet)
+- Can be adopted as n off-the-shelf toll and give rise to existing defense algorithms under settings where no clean base set access
 
 # Requirements
 + Python >= 3.6
