@@ -4,7 +4,7 @@
 ![Pytorch 1.10.1](https://img.shields.io/badge/pytorch-1.10.1-DodgerBlue.svg?style=plastic)
 ![CUDA 11.0](https://img.shields.io/badge/cuda-11.0-DodgerBlue.svg?style=plastic)
 
-Most existing defenses against data poisoning assume access to a set of clean data (referred to as the <b>base set</b>). While this assumption has been taken for granted, given the fast-growing research on stealthy data poisoning techniques, we find that <b>***defenders with existing methods, including manual inspections, cannot identify a clean base set within a contaminated dataset***</b>. 
+Most existing defenses against data poisoning assume access to a set of clean data (referred to as the <b>base set</b>). While this assumption has been taken for granted, given the fast-growing research on stealthy data poisoning techniques, we find that ***defenders with existing methods, including manual inspections, cannot identify a clean base set within a contaminated dataset***. 
 <br>
 
 ![Humanexp](https://user-images.githubusercontent.com/77789132/187101117-15aaa0e5-1d6c-4282-9ec2-2aabfe25270e.jpg)
@@ -12,7 +12,7 @@ The above figure shows the human inspection results regarding data poisoning att
 
 
 With the above-identified challenge of obtaining a clean base set with high precision, we take a step further and propose META-SIFT to resolve the challenge. Our evaluation shows that META-SIFT can robustly sift out a clean base set (size 1000 or more) with 100% precision and zero variance under a wide range of poisoning attacks. 
-<b>The selected base set is large enough to give rise to successful defense when plugged into the existing AI-security defense techniques</b> 
+***The selected base set is large enough to give rise to successful defense when plugged into the existing AI-security defense techniques***
 (e.g., robust training for <a href="https://github.com/xjtushujun/meta-weight-net">mitigating label-noise attacks</a>; <a href="https://github.com/AI-secure/Meta-Nerual-Trojan-Detection">trojan-net detections</a>, <a href="https://github.com/ruoxi-jia-group/I-BAU">backdoor removal defenses</a>, or <a href="https://github.com/ruoxi-jia-group/frequency-backdoor">backdoor sample detections</a>).
 
 # Features
