@@ -36,9 +36,9 @@ There are a several of optional arguments in the ```args```:
 
 - ```corruption_type```: The poison method
 - ```corruption_ratio``` : The poison rates of the poison method.
-- ```tar_lab``` : The label of the attack (if not a global poison)
-- ```repeat_rounds``` : The number of sifters to use when selecting clean subsets .
-- ```warmup_round``` : The number of epochs for warm-up before trainging sifters.
+- ```tar_lab``` : The target label of the attack (if not targeting at all the labels)
+- ```repeat_rounds``` : The number of sifters to use when selecting clean subsets, default 5.
+- ```warmup_round``` : The number of epochs for warm-up before training sifters, default 1.
 
 # Overall Workfolw
 ![wholeworkflow](https://user-images.githubusercontent.com/77789132/187102168-1106e405-477f-4f63-86ae-b980b356a7a8.jpg)
