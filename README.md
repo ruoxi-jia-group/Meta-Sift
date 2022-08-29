@@ -38,6 +38,6 @@ There are a several of optional arguments in the ```args```:
 - ```warmup_round``` : The number of epochs for warm-up before trainging sifters.
 
 # Overall Workfolw
-![wholeworkflow](https://user-images.githubusercontent.com/77789132/187101605-35879456-458a-4518-b8f6-1d8cfda1f8f6.png)
+![wholeworkflow](https://user-images.githubusercontent.com/77789132/187101605-35879456-458a-4518-b8f6-1d8cfda1f8f6.jpg)
 
 The whole process of Meta-Sift consists of two stages: the <b>Training</b> Stage and the <b>Identification Stage</b>. Multiple(m) Sifters will be included during the <b>Identification Stage</b> to reduce the randomness resulting from SGD and randomized sample-dilution. As such, the <b>Training Stage</b> will be repeated m times with different random seeds to obtain m Sifters. In each Sifter, there are two different structures working as a pair: model θ and MW-Net ψ. In one iteration of the <b>Training Stage</b>, there are four steps: Virtual-update of θ; Gradient Sampling using the meta-gradient-sampler Γ; Meta-update of ψ; then the Actual-update of θ. After only one iteration,<b>Training Stage</b> will terminate. The trained Sifters will be adopted in the <b>Identification Stage</b> to assign weights to the diluted data from the dataset. Finally, Meta-Sift aggregates the results from multiple Sifters, and the clean samples will be sifted by inspecting the high-value end.
