@@ -7,7 +7,7 @@
 Most existing defenses against data poisoning assume access to a set of clean data (referred to as the base set hereinafter). While this assumption has been taken for granted, given the fast-growing research on tealthy data poisoning techniques, an important question arises: can the defender really identify a clean subset within a contaminated dataset to support the defenses? We accomplish extensive experiments to give a negative answer to this question. 
 <br>
 
-![Narcissus-Caravaggio](./visual.png)
+![visual](https://user-images.githubusercontent.com/77789132/187101117-15aaa0e5-1d6c-4282-9ec2-2aabfe25270e.jpg)
 Human inspection results regarding data poisoning attacks. The labels and images marked in red depict potential manipulations under that attack category, and the green represents that the attribute remains intact. Among the three different categories of attacks, we report the error rate of misclassifying clean samples into poisoned ones (FPR) or poisoned ones into clean samples (FNR). The result reveals even humans can't identify all poisoned samples.
 
 
