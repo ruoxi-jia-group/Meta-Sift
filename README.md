@@ -40,7 +40,7 @@ There are a several of optional arguments in the ```args```:
 - ```repeat_rounds``` : The number of sifters to use when selecting clean subsets, default 5.
 - ```warmup_round``` : The number of epochs for warm-up before training sifters, default 1.
 
-# Overall Workfolw
+# Overall Workflow
 ![wholeworkflow](https://user-images.githubusercontent.com/77789132/187102168-1106e405-477f-4f63-86ae-b980b356a7a8.jpg)
 
 
