@@ -30,7 +30,7 @@ With the above-identified challenge of obtaining a clean base set with high prec
 
 # Usage & HOW-TO
 <p align="justify">Use the trojan_backdoor_detect_gtsrb.ipynb
- notebook for a quick start of our Meta-sift method. The default setting running on the GTSRB dataset and attack method is BadNets.</p>
+ notebook for a quick start of the Meta-Sift method (demonstrated on the GTSRB dataset). The default setting running on the GTSRB dataset and attack method is BadNets.</p>
 
 There are a several of optional arguments in the ```args```:
 
