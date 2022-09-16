@@ -461,8 +461,8 @@ def poi_dataset(Dataset, poi_methond='badnets', transform=None, tar_lab = 0, poi
         current_label = np.where(np.array(label)==tar_lab)[0]
         poi_idx = np.random.choice(current_label, size=int(current_label.shape[0] * poi_rates), replace=False)
         if noisy is None:
-            noisy = np.transpose(np.load('/home/minzhou/public_html/unlearnable/rebuttal/Narcissus-backdoor-attack/checkpoint/best_noise_gtsrb_mismatch_vgg_08-04-15_00_38.npy')[0],(2,1,0))
-            # noisy = np.transpose(np.load('/home/minzhou/public_html/unlearnable/rebuttal/Narcissus-backdoor-attack/checkpoint/best_noise_cifar10_mismatch_06-09-05_39_13.npy')[0],(2,1,0))*0.5
+            noisy = np.transpose(np.load('/home/minzhou/public_html/unlearnable/rebuttal/Narcissus-backdoor-attack/checkpoint/best_noise_gtsrb_mismatch_vgg_08-04-15_00_38.npy')[0],(1,2,0))
+            # noisy = np.transpose(np.load('/home/minzhou/public_html/unlearnable/rebuttal/Narcissus-backdoor-attack/checkpoint/best_noise_cifar10_mismatch_06-09-05_39_13.npy')[0],(1,2,0))*0.5
             # noisy = ((inverse_normalize(noisy,(0.5, 0.5, 0.5),(0.5, 0.5, 0.5))-0.5)*255).astype(int)
             noisy = (noisy*255).astype(int)
         posion_dataset = posion_image(Dataset, poi_idx, noisy, transform)
